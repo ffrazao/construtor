@@ -11,3 +11,5 @@ insert into atributo (atributo_tipo_id, codigo, nome, descricao) values ((select
 
 insert into elemento_atributo (elemento_id, atributo_id, ordem) values ((select id from elemento where codigo = 'TESTE'), (select id from atributo where codigo = 'CODIGO'), 1);
 insert into elemento_atributo (elemento_id, atributo_id, ordem) values ((select id from elemento where codigo = 'TESTE'), (select id from atributo where codigo = 'VALOR'), 2);
+
+commit;
